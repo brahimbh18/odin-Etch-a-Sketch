@@ -1,26 +1,18 @@
 body {
-    display: flex;
-    
+    display: flex;   
     justify-content: center;
 }
-
 .grid {
-    display: flex;
-    
+    display: flex;    
     flex-wrap: wrap;
     justify-content: center;
     background-color: brown;
     
     width: 600px;
     height: 600px;
-   
 }
-/*.grid1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-*/
-.square {
+
+.grid-item {
     border: solid black 1px;
 }
 
