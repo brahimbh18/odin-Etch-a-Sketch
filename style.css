@@ -1,15 +1,38 @@
 body {
-    display: flex;
-    
+    display: flex;  
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
+h1 {
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.settings {
+    background-color: tan;
+    width: 400px;
+    height: 560px;
+    margin-right: 100px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 
 .grid {
     display: flex;
     
     flex-wrap: wrap;
     justify-content: center;
-    background-color: brown;
+    background-color: white;
     
     width: 600px;
     height: 600px;
@@ -21,7 +44,9 @@ body {
 }
 */
 .square {
-    border: solid black 1px;
+    border: solid gray 1px;
+    /*width: 118px;
+    height: 118px;*/
 }
 
 .hovered {

@@ -8,10 +8,25 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="container">
+        <div class="settings">
+            <div>
+                <label>Choose grid :</label>
+                <input id="size" type="range" min="1" max="100" step="1" value="16" onchange="loadPage()">
+                <label class="size">16</label>
+            </div>
+            <div>
+                <label>Choose color :</label>
+                <input type="color" id="color">
+            </div>
+            <button onchange="loadPage()">ok</button>
 
-    
-    <div class="grid">
-        
+        </div>
+
+        <div class="grid">
+            
     </div>
+    
 </body>
 </html>
