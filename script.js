@@ -48,7 +48,6 @@ function makeGrid(bsize, gsize) {
     for (i = 1; i <= gsize*gsize; i++) {
         var gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
-        //gridItem.ssetAttribute("draggable", false);
         gridItem.style.width = `${(bsize / gsize)}px`;
         gridItem.style.height = `${(bsize / gsize)}px`;
 
@@ -73,8 +72,7 @@ function hovered() {
         })
         
     })
-
-    }    
+}    
 
 function erasePen() {
     console.log(color.value);
