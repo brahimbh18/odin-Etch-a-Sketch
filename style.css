@@ -1,54 +1,82 @@
 body {
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: wheat;
 }
 
 h1 {
+    text-align: center;
     font-size: 50px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+    
+    justify-content: space-around;
 }
 
-.settings {
-    background-color: tan;
-    width: 400px;
-    height: 560px;
-    margin-right: 100px;
-    border-radius: 10px;
-    padding: 20px;
+.settings{
+    width: 300px;
+    height: 300px;
+    padding: 10px 20px 20px;
+    background-color: burlywood;
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
 }
-
+.grid-container {
+    width: 50%;
+    height: 100%;
+    /*border: 1px black solid;*/
+}
 
 .grid {
-    display: flex;
-    
-    flex-wrap: wrap;
-    justify-content: center;
+
     background-color: white;
-    
-    width: 600px;
-    height: 600px;
-   
-}
-/*.grid1 {
     display: flex;
     flex-wrap: wrap;
 }
-*/
-.square {
-    border: solid gray 1px;
-    /*width: 118px;
-    height: 118px;*/
+
+.grid-item {
+    /*border: black solid 1px;*/
+  
+}
+.grid-item, #haha{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .hovered {
     background-color: black;
+}
+
+
+input[type='text']{
+    width: 42px;
+    border-radius: 10px;
+    text-align: center;
+}
+#eraser{
+    width: 50px;
+}
+#clear {
+    width: 90%;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
