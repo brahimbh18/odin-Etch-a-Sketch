@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch a sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Etch-a-sketch</h1>
+    <div class="container">
+        <div class="settings">
+            <h2>Settings</h2>
+            <div class="div">
+                <label>Board size (px) :</label>
+                <input type="range" id="Bsize" value="600" max="1000">
+                <input type="text" id="Bsize1" value="600" max="1000" >
+            </div>
+            <div class="div">
+                <label>Grid size :</label>
+                <input type="range" id="Gsize" value="16" step="1" max="100" >
+                <input type="text" id="Gsize1" value="16" step="1" max="100">
+            </div>
+            
+            <div class="div">
+                <label>Board color :</label>
+                <input type="color" id="color" value="#FFFFFF">
+            </div>
+            <div class="div">
+                <label>Pen color :</label>
+                <input type="color" id="pen">
+            </div>
+            <div class="div">
+                <label>RGB pen :</label>
+                <button id="rgb">RGB</button>
+            </div>
+            <div class="div">
+                <label>Light Pen :</label>
+                <input type="color" id="op">
+            </div>
+            
+            <div class="div">
+                <label>Eraser :</label>
+                <input type="button" id="eraser" value="erase">
+            </div>
+            <div class="clear">
+                <button id="clear">clear</button>
+            </div>
+
+        </div>
+        <div class="grid-container">
+            <div class="grid"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
